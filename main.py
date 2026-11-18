@@ -8,7 +8,10 @@ file must start with the PNG signature, must be at most 1 MiB, and must
 be byte-identical to the source. Any failed check exits non-zero.
 
 Note: the image itself is a fixed asset — the program never edits it,
-it only delivers it and proves the delivery is intact.
+it only delivers it and proves the delivery is intact. The current
+image is the bold breaking-news poster: a dark navy design with a red
+BREAKING banner, a large radar visual over the Gulf, and the same twelve
+verified stories as the earlier light front page.
 """
 import os
 import shutil
@@ -34,13 +37,13 @@ def main():
     with open(dst, "rb") as f:
         data = f.read()
     if data[:8] != PNG_SIGNATURE:
-        fail("output is not a PNG file")
+        fail("output is not a PNG file (bad signature)")
     if len(data) > MAX_BYTES:
         fail(f"output is {len(data)} bytes, over the 1 MiB limit")
     with open(src, "rb") as f:
         original = f.read()
     if data != original:
-        fail("output differs from entry.png")
+        fail(f"output ({len(data)} bytes) differs from entry.png ({len(original)} bytes)")
 
     print(f"wrote {dst} ({len(data)} bytes)")
 

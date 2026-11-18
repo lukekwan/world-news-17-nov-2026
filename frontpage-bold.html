@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World — Tuesday 17 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; background: #05080f; font-family: Arial, Helvetica, sans-serif; color: #f2f5f9; }
+  .page { width: 1024px; height: 1024px; padding: 20px 28px 16px; display: flex; flex-direction: column; }
+
+  /* Breaking banner */
+  .banner { background: #e82127; color: #fff; height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; }
+  .banner .breaking { font-size: 20px; font-weight: 900; letter-spacing: 3px; }
+  .banner .date { font-size: 16px; font-weight: 700; letter-spacing: 2px; }
+
+  /* Masthead */
+  .masthead { margin-top: 12px; }
+  .masthead h1 { font-size: 74px; line-height: 1; font-weight: 900; letter-spacing: 3px; color: #fff; }
+  .masthead h1 span { color: #e82127; }
+  .masthead .rule { height: 3px; background: #e82127; margin-top: 10px; }
+  .masthead .kicker { display: flex; justify-content: space-between; margin-top: 8px; font-size: 13px; font-weight: 700; letter-spacing: 4px; color: #9fb0c6; }
+
+  /* Hero */
+  .hero { margin-top: 12px; height: 356px; background: #0a1220; border: 1px solid #1d2f4d; display: flex; overflow: hidden; }
+  .hero .art { width: 400px; min-width: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #081020; border-right: 1px solid #1d2f4d; padding: 10px 8px 8px; }
+  .hero .art .cap { font-size: 12px; font-weight: 700; letter-spacing: 3px; color: #39ff88; margin-top: 6px; }
+  .hero .text { padding: 22px 24px 18px; flex: 1; display: flex; flex-direction: column; }
+  .tag { display: inline-block; align-self: flex-start; font-size: 13px; font-weight: 900; letter-spacing: 2px; background: #e82127; color: #fff; padding: 5px 10px; text-transform: uppercase; }
+  .hero h2 { font-size: 50px; line-height: 1.04; font-weight: 900; margin-top: 14px; color: #fff; }
+  .hero h2 em { font-style: normal; color: #ff5a5a; }
+  .hero p { font-size: 17px; line-height: 1.45; margin-top: 12px; color: #c8d4e4; }
+  .hero .live { margin-top: auto; border-top: 1px solid #1d2f4d; padding-top: 10px; font-size: 13px; font-weight: 900; letter-spacing: 2px; color: #39ff88; }
+
+  /* Numbered grid */
+  .grid { margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .cell { background: #0b1424; border: 1px solid #16233a; padding: 11px 14px 10px; display: flex; gap: 12px; }
+  .cell.wide { grid-column: 1 / -1; }
+  .cell .num { font-size: 30px; font-weight: 900; color: #e82127; line-height: 1; min-width: 40px; }
+  .cell .body { flex: 1; }
+  .cell .lab { font-size: 11px; font-weight: 900; letter-spacing: 2px; color: #7e93b0; text-transform: uppercase; }
+  .cell h3 { font-size: 20px; line-height: 1.18; font-weight: 900; margin-top: 3px; color: #fff; }
+  .cell p { font-size: 13.5px; line-height: 1.35; margin-top: 4px; color: #a9b8cc; }
+
+  /* Ticker */
+  .ticker { margin-top: 12px; background: #0e1626; border-top: 3px solid #e82127; padding: 10px 14px; font-size: 14px; line-height: 1.45; color: #e6ecf4; }
+  .ticker b { color: #ff5a5a; letter-spacing: 2px; font-size: 12px; }
+  .ticker span { color: #ffd166; }
+
+  .footer { margin-top: auto; border-top: 1px solid #1d2f4d; padding-top: 8px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 1px; color: #5f738f; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="banner">
+    <div class="breaking">&#9679; BREAKING NEWS</div>
+    <div class="date">TUESDAY, 17 NOVEMBER 2026</div>
+  </div>
+
+  <div class="masthead">
+    <h1>THE WORLD<span>.</span></h1>
+    <div class="rule"></div>
+    <div class="kicker"><span>THE DAY IN WORLD NEWS</span><span>ONE DAY &middot; ONE POSTER</span></div>
+  </div>
+
+  <div class="hero">
+    <div class="art">
+      <!-- Large radar screen with Gulf map inset -->
+      <svg width="384" height="312" viewBox="0 0 384 312" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="sweep" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#39ff88" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="#39ff88" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <circle cx="190" cy="150" r="140" fill="#0a1424" stroke="#2c4a73" stroke-width="1.5"/>
+        <circle cx="190" cy="150" r="108" fill="none" stroke="#2c4a73" stroke-width="1.5"/>
+        <circle cx="190" cy="150" r="74" fill="none" stroke="#2c4a73" stroke-width="1.5"/>
+        <circle cx="190" cy="150" r="40" fill="none" stroke="#2c4a73" stroke-width="1.5"/>
+        <line x1="190" y1="10" x2="190" y2="290" stroke="#2c4a73" stroke-width="1"/>
+        <line x1="50" y1="150" x2="330" y2="150" stroke="#2c4a73" stroke-width="1"/>
+        <line x1="91" y1="51" x2="289" y2="249" stroke="#22395c" stroke-width="1"/>
+        <line x1="289" y1="51" x2="91" y2="249" stroke="#22395c" stroke-width="1"/>
+        <path d="M190,150 L296,48 A140,140 0 0 1 330,150 Z" fill="url(#sweep)"/>
+        <line x1="190" y1="150" x2="296" y2="48" stroke="#39ff88" stroke-width="3"/>
+        <!-- impact blip -->
+        <circle cx="268" cy="80" r="7" fill="#ff3b30"/>
+        <circle cx="268" cy="80" r="14" fill="none" stroke="#ff3b30" stroke-width="2"/>
+        <circle cx="268" cy="80" r="23" fill="none" stroke="#ff3b30" stroke-width="1.2" opacity="0.6"/>
+        <circle cx="118" cy="212" r="5" fill="#ffd166"/>
+        <circle cx="252" cy="228" r="5" fill="#ffd166"/>
+        <circle cx="150" cy="92" r="4" fill="#7ee787"/>
+        <circle cx="190" cy="150" r="5" fill="#fff"/>
+        <!-- Gulf map inset -->
+        <g>
+          <rect x="246" y="216" width="128" height="88" fill="#0d1a2e" stroke="#2c4a73" stroke-width="1.5"/>
+          <text x="254" y="232" fill="#7e93b0" font-size="10" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="1.5">THE GULF</text>
+          <path d="M256,296 L292,278 L318,284 L344,268 L366,272 L360,292 L330,296 L306,290 L282,298 L262,302 Z" fill="#16294a" stroke="#3a5a80" stroke-width="1.2"/>
+          <circle cx="330" cy="284" r="5" fill="#ff3b30"/>
+          <circle cx="330" cy="284" r="9" fill="none" stroke="#ff3b30" stroke-width="1.2"/>
+          <text x="310" y="262" fill="#fff" font-size="10" font-weight="bold" font-family="Arial, sans-serif" letter-spacing="1">BAHRAIN</text>
+        </g>
+      </svg>
+      <div class="cap">SHEIKH ISA BASE &middot; BAHRAIN</div>
+    </div>
+    <div class="text">
+      <span class="tag">War in the Gulf</span>
+      <h2>IRAN STRIKES <em>U.S. RADAR</em> IN BAHRAIN</h2>
+      <p>Drones hit the American radar at Sheikh Isa base. Bahrain says it intercepted the attack &mdash; no casualties. A third U.S. carrier reaches the region as Iran refuses UN nuclear inspections.</p>
+      <div class="live">&#9679; LIVE &mdash; USS THEODORE ROOSEVELT NOW IN THEATRE</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="cell">
+      <div class="num">01</div>
+      <div class="body">
+        <div class="lab">Diplomacy</div>
+        <h3>Trump in Manila for ASEAN and Quad</h3>
+        <p>Beijing confirms a Nov 19 U.S.&ndash;Russia&ndash;China summit in Shenzhen.</p>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="num">02</div>
+      <div class="body">
+        <div class="lab">War in Ukraine</div>
+        <h3>Ukraine hits Crimea bridge; Russia hits Kyiv</h3>
+        <p>Kerch traffic halted; EU sanctions 12 people, 101 entities.</p>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="num">03</div>
+      <div class="body">
+        <div class="lab">Cyberattack</div>
+        <h3>Hack hits 178 top sites</h3>
+        <p>Optimizely malware strikes BBC, CNN, Zoom, HSBC; crypto stolen.</p>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="num">04</div>
+      <div class="body">
+        <div class="lab">Space</div>
+        <h3>Vulcan rocket fails; 40 satellites lost</h3>
+        <p>ULA&rsquo;s Vulcan fails minutes after liftoff; 40 Amazon Leo gone.</p>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="num">05</div>
+      <div class="body">
+        <div class="lab">Trade</div>
+        <h3>China hits back at U.S. chip curbs</h3>
+        <p>Beijing calls the limits &ldquo;economic coercion&rdquo;, vows to respond.</p>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="num">06</div>
+      <div class="body">
+        <div class="lab">Middle East</div>
+        <h3>U.K. sanctions settlement builders</h3>
+        <p>Eight Israeli firms blacklisted after a killing in Jericho.</p>
+      </div>
+    </div>
+    <div class="cell wide">
+      <div class="num">07</div>
+      <div class="body">
+        <div class="lab">Asia</div>
+        <h3>Japan scrambles jets; Estonia shuts border</h3>
+        <p>Tokyo protests suspected Russian planes; Estonia closes its Russia crossings from Dec 1.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <b>ALSO TODAY</b> &nbsp;&middot;&nbsp; Five EU states plan a Rwanda return hub for rejected asylum seekers <span>&middot;</span> Buffett donates $5.47bn in Berkshire shares <span>&middot;</span> California sues OpenAI over rogue AI agents <span>&middot;</span> Cyclone Akvan bears down on India&rsquo;s east coast
+  </div>
+
+  <div class="footer">
+    <span>THE WORLD &mdash; TUESDAY 17 NOVEMBER 2026</span>
+    <span>COMPILED FROM THE DAY&rsquo;S WIRE AND PRESS REPORTS</span>
+  </div>
+
+</div>
+</body>
+</html>
