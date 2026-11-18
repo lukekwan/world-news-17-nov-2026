@@ -21,5 +21,21 @@ The image is rendered from `frontpage.html` (a hand-built front page) to
 `entry.png` (1024×1024, under 1 MiB). `main.py` copies it to
 `/output/entry.png`, deterministically.
 
+## Run it
+
+```
+python3 main.py
+```
+
+Writes `/output/entry.png` — a byte-for-byte copy of the `entry.png` in
+this repository. No network, no dependencies beyond the standard library.
+
+## Verify
+
+`main.py` checks its own output before exiting: the file must start with
+the PNG signature, must be at most 1 MiB, and must be byte-identical to
+`entry.png`. Any failed check exits non-zero. Two runs produce identical
+bytes (compare with `md5sum /output/entry.png entry.png`).
+
 Built for the make.fun bounty
 [Sum up 17 November's world news in one image](https://make.fun/bounty/news-image-20261117).
